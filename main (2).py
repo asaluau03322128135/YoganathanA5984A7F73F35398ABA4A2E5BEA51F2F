@@ -1,11 +1,15 @@
-def CheckLeap(Year):
- if((Year % 400 == 0) or 
-    (Year % 100 != 0) and
-    (Year % 4 == 0)):
-   print("Given Year is a leap Year");
- else: 
-   print ("Given Year is not a leap Year")
+class player:
+  def player(self):
+    print("The Player is playing Cricket!")
+class Batsman(player):
+  def play(self):
+    print("The Batsman is Batting!")
+class Bowler(player):
+  def play(self):
+    print("The Bowler  is Bowling!")
+batsman=Batsman()
+bowler=Bowler()
+batsman.play()
+bowler.play()
 
-Year = int(input("Enter a Year :"))
-CheckLeap(Year)  
 
